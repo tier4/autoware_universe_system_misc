@@ -1,19 +1,25 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>dummy_diag_publisher</name>
-  <version>0.1.0</version>
-  <description>The dummy_diag_publisher ROS2 package</description>
+  <name>system_error_monitor</name>
+  <version>0.1.1</version>
+  <description>The system_error_monitor package in ROS2</description>
   <maintainer email="kenji.miyake@tier4.jp">Kenji Miyake</maintainer>
   <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
-  <depend>diagnostic_updater</depend>
+  <depend>autoware_auto_system_msgs</depend>
+  <depend>autoware_auto_vehicle_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>fmt</depend>
   <depend>rclcpp</depend>
+  <depend>std_srvs</depend>
   <depend>tier4_autoware_utils</depend>
+  <depend>tier4_control_msgs</depend>
 
-  <exec_depend>rqt_reconfigure</exec_depend>
+  <exec_depend>diagnostic_aggregator</exec_depend>
+  <exec_depend>rqt_robot_monitor</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>autoware_lint_common</test_depend>
